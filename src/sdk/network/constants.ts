@@ -154,7 +154,7 @@ export const Networks: {
       entryPoint: '0x5FF137D4b0FDCD49DcA30c7CF57E578a026d2789',
       walletFactory: '0x7f6d8F107fE8551160BD5351d5F1514A6aD5d40E',
     },
-    graphqlEndpoint: '',
+    graphqlEndpoint: 'qa-etherspot.pillarproject.io',
   },
   [122]: {
     chainId: 122,
@@ -194,12 +194,12 @@ export const Networks: {
   },
   [420]: {
     chainId: 420,
-    bundler: '',
+    bundler: 'https://optimismgoerli-bundler.etherspot.io/',
     contracts: {
       entryPoint: '0x5FF137D4b0FDCD49DcA30c7CF57E578a026d2789',
       walletFactory: '0x7f6d8F107fE8551160BD5351d5F1514A6aD5d40E',
     },
-    graphqlEndpoint: '',
+    graphqlEndpoint: 'qa-etherspot.pillarproject.io',
   },
   [31]: {
     chainId: 31,
@@ -262,7 +262,7 @@ export const Networks: {
       entryPoint: '0x5FF137D4b0FDCD49DcA30c7CF57E578a026d2789',
       walletFactory: '0x7f6d8F107fE8551160BD5351d5F1514A6aD5d40E'
     },
-    graphqlEndpoint: ''
+    graphqlEndpoint: 'qa-etherspot.pillarproject.io'
   },
   [43113]: {
     chainId: 43113,
@@ -271,7 +271,7 @@ export const Networks: {
       entryPoint: '0x5FF137D4b0FDCD49DcA30c7CF57E578a026d2789',
       walletFactory: '0x7f6d8F107fE8551160BD5351d5F1514A6aD5d40E'
     },
-    graphqlEndpoint: ''
+    graphqlEndpoint: 'qa-etherspot.pillarproject.io'
   },
   [59144]: {
     chainId: 59144,
