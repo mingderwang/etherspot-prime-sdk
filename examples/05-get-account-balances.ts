@@ -5,14 +5,16 @@ dotenv.config();
 
 async function main() {
     // initializating sdk...
+    console.log('\x1b[33m%s\x1b[0m', Number(process.env.CHAIN_ID))
+    console.log('\x1b[33m%s\x1b[0m', process.env.PKEY)
     const primeSdk = new PrimeSdk({ privateKey: process.env.WALLET_PRIVATE_KEY }, {
         chainId: Number(process.env.CHAIN_ID),
-        projectKey: '', // project key
+        projectKey: process.env.PKEY, // project key
     });
 
     const balances = await primeSdk.getAccountBalances({
-        account: '', // account address
-        chainId: 1,
+        account: '0x06159453E00a00C05E15E5268355bbBf83d75948',// '0x06159453E00a00C05E15E5268355bbBf83d75948', // account address
+        chainId: Number(process.env.CHAIN_ID),
     });
     console.log('\x1b[33m%s\x1b[0m', `EtherspotWallet balances:`, balances);
 }

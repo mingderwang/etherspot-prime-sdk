@@ -9,12 +9,12 @@ dotenv.config();
 
 // add/change these values
 const recipient = '0x80a1874E1046B1cc5deFdf4D3153838B72fF94Ac'; // recipient wallet address
-const value = '0.1'; // transfer value
-const tokenAddress = '0x326C977E6efc84E512bB9C30f76E30c160eD06FB';
+const value = '0.01'; // transfer value
+const tokenAddress = '0xfe4F5145f6e09952a5ba9e956ED0C25e3Fa4c7F1';
 
 async function main() {
   // initializating sdk...
-  const primeSdk = new PrimeSdk({ privateKey: process.env.WALLET_PRIVATE_KEY }, { chainId: Number(process.env.CHAIN_ID), projectKey: '' })
+  const primeSdk = new PrimeSdk({ privateKey: process.env.WALLET_PRIVATE_KEY }, { chainId: Number(process.env.CHAIN_ID), projectKey: process.env.PKEY })
 
   console.log('address: ', primeSdk.state.walletAddress)
 

@@ -7,7 +7,7 @@ dotenv.config();
 async function main(): Promise<void> {
   const primeSdk = new PrimeSdk({ privateKey: process.env.WALLET_PRIVATE_KEY }, {
     chainId: Number(process.env.CHAIN_ID),
-    projectKey: '', // project key
+    projectKey: process.env.PKEY, // project key
   });
   const fromTokenAddress = '0xe3818504c1b32bf1557b16c238b2e01fd3149c17';
   const toTokenAddress = constants.AddressZero;
