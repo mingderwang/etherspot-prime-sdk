@@ -6,7 +6,7 @@ import { ethers } from "ethers";
 const INIT_CONFIG = {
   rpcProviderUrl: "https://mumbai-bundler.etherspot.io",
   signingKey: new ethers.Wallet(ethers.utils.randomBytes(32)).privateKey,
-  chainId: 80001,
+  chainId: 5,
   paymaster: {
     rpcUrl: "",
     context: {},
