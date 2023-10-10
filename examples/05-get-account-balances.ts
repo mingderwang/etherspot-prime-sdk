@@ -13,7 +13,7 @@ async function main() {
     });
 
     const balances = await primeSdk.getAccountBalances({
-        account: '0x06159453E00a00C05E15E5268355bbBf83d75948',// '0x06159453E00a00C05E15E5268355bbBf83d75948', // account address
+        account: '0xC8877d8eeaA03F5869929AbEad902EDdCce09180',// '0x06159453E00a00C05E15E5268355bbBf83d75948', // account address
         chainId: Number(process.env.CHAIN_ID),
     });
     console.log('\x1b[33m%s\x1b[0m', `EtherspotWallet balances:`, balances);

@@ -10,7 +10,7 @@ dotenv.config();
 // add/change these values
 const recipient = '0x80a1874E1046B1cc5deFdf4D3153838B72fF94Ac'; // recipient wallet address
 const value = '0.01'; // transfer value
-const tokenAddress = '0xfe4F5145f6e09952a5ba9e956ED0C25e3Fa4c7F1';
+const tokenAddress = '0x655F2166b0709cd575202630952D71E2bB0d61Af'; // DERC20
 
 async function main() {
   // initializating sdk...
